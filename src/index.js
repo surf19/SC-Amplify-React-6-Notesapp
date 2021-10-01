@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
+Amplify.configure(config);
+
+// Excerpt From: Nader Dabit. “Full Stack Serverless.” Apple Books. 
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
